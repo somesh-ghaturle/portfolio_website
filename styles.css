@@ -488,6 +488,11 @@ section {
   background: var(--bg-card);
   padding: 2.5rem;
   transition: all var(--transition);
+  border-bottom: 1px solid var(--border);
+}
+
+.exp-item:last-child {
+  border-bottom: none;
 }
 
 .exp-item:hover {
@@ -498,7 +503,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   gap: 1rem;
 }
 
@@ -515,10 +520,18 @@ section {
   font-weight: 600;
 }
 
-.exp-company-info {
+.exp-meta {
   color: var(--text-muted);
   font-size: 0.78rem;
   margin-top: 4px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.3px;
+}
+
+.exp-company-info {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  margin-top: 2px;
   letter-spacing: 0.2px;
 }
 
@@ -531,6 +544,65 @@ section {
   border-left: 2px solid var(--border);
   font-style: italic;
   opacity: 0.8;
+}
+
+.exp-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.exp-bullets li {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.75;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.exp-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  background: var(--text-muted);
+  border-radius: 50%;
+}
+
+.exp-bullets li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.exp-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.exp-skill-tag {
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.3rem 0.7rem;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  letter-spacing: 0.3px;
+  transition: all var(--transition);
+}
+
+.exp-skill-tag:hover {
+  border-color: var(--border-hover);
+  color: var(--text-secondary);
 }
 
 .exp-date {
