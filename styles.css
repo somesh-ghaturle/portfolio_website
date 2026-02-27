@@ -512,6 +512,25 @@ section {
   color: var(--text-secondary);
   font-size: 0.92rem;
   margin-top: 2px;
+  font-weight: 600;
+}
+
+.exp-company-info {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  margin-top: 4px;
+  letter-spacing: 0.2px;
+}
+
+.exp-company-about {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  margin-top: 6px;
+  line-height: 1.6;
+  padding-left: 10px;
+  border-left: 2px solid var(--border);
+  font-style: italic;
+  opacity: 0.8;
 }
 
 .exp-date {
